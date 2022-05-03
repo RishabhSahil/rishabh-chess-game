@@ -1,0 +1,818 @@
+2022-05-03 11:46:28,461 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:46:29,520 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=10308)>: Connection made
+2022-05-03 11:46:29,520 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10308)>: << uci
+2022-05-03 11:46:29,979 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 11:46:29,990 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> id name CDrill 1800
+2022-05-03 11:46:29,990 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> id author Ferdinand Mosca
+2022-05-03 11:46:29,990 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name Ponder type check default false
+2022-05-03 11:46:29,994 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name OwnBook type check default false
+2022-05-03 11:46:29,995 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 11:46:29,995 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:29,999 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,001 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,001 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,105 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,118 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,121 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 11:46:30,121 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 11:46:30,121 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10308)>: >> uciok
+2022-05-03 11:46:30,121 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10308)>: << quit
+2022-05-03 11:46:30,141 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=10308)>: Process exited
+2022-05-03 11:46:30,141 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=10308)>: Connection lost (exit code: 0, error: None)
+2022-05-03 11:46:30,149 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:46:32,021 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=10224)>: Connection made
+2022-05-03 11:46:32,021 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10224)>: << uci
+2022-05-03 11:46:32,091 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> info string Deuterium v2019.1.36.50 32bit
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> id name Deuterium v2019.1.36.50
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> id author Ferdinand Mosca
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name Hash type spin default 128 min 8 max 2048
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name EvalHash type spin default 32 min 4 max 32
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PawnHash type spin default 4 min 2 max 8
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name Log type check default false
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name Ponder type check default true
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name OwnBook type check default false
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name BookFilename type string default deuterium.bin
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name BookMoveSelect type combo default Random var BestWeight var BestScore var Random
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PawnValueOp type spin default 95 min 70 max 110
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PawnValueEn type spin default 125 min 90 max 150
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name KnightValueOp type spin default 325 min 250 max 350
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name KnightValueEn type spin default 315 min 250 max 350
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name BishopValueOp type spin default 328 min 250 max 350
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name BishopValueEn type spin default 327 min 250 max 350
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name RookValueOp type spin default 504 min 450 max 550
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name RookValueEn type spin default 498 min 450 max 550
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name QueenValueOp type spin default 996 min 900 max 1200
+2022-05-03 11:46:32,251 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name QueenValueEn type spin default 999 min 900 max 1200
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name KingShelterWeight type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PawnStormWeight type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name KingAttackWeight type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name MobilityWeight type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PassedPawnWeightOp type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name PassedPawnWeightEn type spin default 100 min 25 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name WeakSquareWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name RookInOpenFileOp type spin default 32 min 4 max 100
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name RookInOpenFileEn type spin default 16 min 2 max 100
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name NullMove type check default true
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name RepetitionScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name InsufficientMaterialScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name FiftyMoveScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name StaleMateScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name TimeBufferMilliSec type spin default 60 min 0 max 1000
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name UCI_AnalyseMode type check default false
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> option name ClearHash type button
+2022-05-03 11:46:32,259 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10224)>: >> uciok
+2022-05-03 11:46:32,266 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10224)>: << quit
+2022-05-03 11:46:32,301 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=10224)>: Process exited
+2022-05-03 11:46:32,301 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=10224)>: Connection lost (exit code: 0, error: None)
+2022-05-03 11:46:32,308 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:46:33,739 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=11472)>: Connection made
+2022-05-03 11:46:33,739 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11472)>: << uci
+2022-05-03 11:46:33,871 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> info string Deuterium v2019.2.37.73 64bit POPCNT
+2022-05-03 11:46:34,099 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> id name Deuterium v2019.2.37.73
+2022-05-03 11:46:34,099 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> id author Ferdinand Mosca
+2022-05-03 11:46:34,099 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name Hash type spin default 128 min 8 max 2048
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name EvalHash type spin default 32 min 4 max 32
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PawnHash type spin default 4 min 2 max 8
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name UCI_LimitStrength type check default false
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name UCI_Elo type spin default 2800 min 1000 max 2800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name Log type check default false
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name Ponder type check default true
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name OwnBook type check default false
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name BookFilename type string default deuterium.bin
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name BookMoveSelect type combo default BestWeight var BestWeight var BestScore var Random
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PawnValueOp type spin default 94 min 70 max 110
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PawnValueEn type spin default 92 min 90 max 150
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name KnightValueOp type spin default 325 min 200 max 500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name KnightValueEn type spin default 315 min 200 max 500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name BishopValueOp type spin default 350 min 200 max 500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name BishopValueEn type spin default 350 min 200 max 500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name RookValueOp type spin default 493 min 300 max 800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name RookValueEn type spin default 525 min 300 max 800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name QueenValueOp type spin default 985 min 500 max 1500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name QueenValueEn type spin default 1022 min 500 max 1500
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name KingShelterWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PawnStormWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name KingAttackWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name MobilityWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PassedPawnWeightOp type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name PassedPawnWeightEn type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name WeakSquareWeight type spin default 100 min 0 max 100000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name RookInOpenFileOp type spin default 32 min 0 max 100
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name RookInOpenFileEn type spin default 16 min 0 max 100
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name NullMove type check default true
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name RepetitionScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name InsufficientMaterialScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name FiftyMoveScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name StaleMateScore type spin default 0 min -29800 max 29800
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name TimeBufferMilliSec type spin default 60 min 0 max 1000
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 11:46:34,104 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name UCI_AnalyseMode type check default false
+2022-05-03 11:46:34,109 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> option name ClearHash type button
+2022-05-03 11:46:34,109 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11472)>: >> uciok
+2022-05-03 11:46:34,110 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11472)>: << quit
+2022-05-03 11:46:34,151 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=11472)>: Process exited
+2022-05-03 11:46:34,151 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=11472)>: Connection lost (exit code: 0, error: None)
+2022-05-03 11:46:34,161 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:46:34,204 :: check_engine_config_file :: line: 1183 :: ERROR :: Failed to start engine Deuterium_v2020.1.38.5_linux_64bit!
+Traceback (most recent call last):
+  File "G:\Persional-Code-and-File\Games\Python-Easy-Chess-GUI\python_easy_chess_gui.py", line 1176, in check_engine_config_file
+    engine = chess.engine.SimpleEngine.popen_uci(
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 2798, in popen_uci
+    return cls.popen(UciProtocol, command, timeout=timeout, debug=debug, setpgrp=setpgrp, **popen_args)
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 2790, in popen
+    return run_in_background(background, name=f"{cls.__name__} (command={command!r})", debug=debug)
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 201, in run_in_background
+    return future.result()
+  File "C:\Program Files\Python310\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "C:\Program Files\Python310\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 195, in background
+    asyncio.run(coroutine(future))
+  File "C:\Program Files\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 2778, in background
+    transport, protocol = await Protocol.popen(command, setpgrp=setpgrp, **popen_args)
+  File "C:\Users\AI_RO\AppData\Roaming\Python\Python310\site-packages\chess\engine.py", line 1196, in popen
+    return await asyncio.get_running_loop().subprocess_exec(cls, *command, **popen_args)  # type: ignore
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Program Files\Python310\lib\asyncio\windows_events.py", line 394, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+  File "C:\Program Files\Python310\lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "C:\Program Files\Python310\lib\asyncio\windows_events.py", line 890, in _start
+    self._proc = windows_utils.Popen(
+  File "C:\Program Files\Python310\lib\asyncio\windows_utils.py", line 153, in __init__
+    super().__init__(args, stdin=stdin_rfd, stdout=stdout_wfd,
+  File "C:\Program Files\Python310\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\Python310\lib\subprocess.py", line 1435, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 193] %1 is not a valid Win32 application
+2022-05-03 11:47:11,629 :: play_game :: line: 2145 :: INFO :: Book move is g7g6.
+2022-05-03 11:47:13,781 :: play_game :: line: 2145 :: INFO :: Book move is f8g7.
+2022-05-03 11:47:16,078 :: play_game :: line: 2145 :: INFO :: Book move is c7c5.
+2022-05-03 11:47:20,028 :: play_game :: line: 2145 :: INFO :: Book move is b8c6.
+2022-05-03 11:47:28,703 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:47:28,709 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=10860)>: Connection made
+2022-05-03 11:47:28,719 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << uci
+2022-05-03 11:47:28,847 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 11:47:28,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> id name CDrill 1800
+2022-05-03 11:47:28,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> id author Ferdinand Mosca
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name Ponder type check default false
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name OwnBook type check default false
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 11:47:28,854 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> uciok
+2022-05-03 11:47:28,854 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << ucinewgame
+2022-05-03 11:47:28,857 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << isready
+2022-05-03 11:47:28,857 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> readyok
+2022-05-03 11:47:28,857 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << position startpos moves g2g3 g7g6 f1g2 f8g7 g1f3 c7c5 d2d3 b8c6 f3e5
+2022-05-03 11:47:28,857 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << go wtime 188000 btime 188000 winc 2000 binc 2000
+2022-05-03 11:47:28,871 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 1 seldepth 7 score cp 330 time 12 nodes 55 nps 4583 pv c6e5
+2022-05-03 11:47:28,871 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 2 seldepth 7 score cp 307 time 12 nodes 371 nps 30916 pv c6e5 c1g5
+2022-05-03 11:47:28,879 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 3 seldepth 10 score cp 323 time 20 nodes 2724 nps 136200 pv g7e5 g2d5 c6d4
+2022-05-03 11:47:28,897 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 4 seldepth 12 score cp 321 time 38 nodes 12680 nps 333684 pv g7e5 b1c3 e5c3 b2c3 d7d5
+2022-05-03 11:47:29,003 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 5 seldepth 13 score cp 327 time 144 nodes 65180 nps 452638 pv g7e5 b1c3 d8b6 c3d5 b6a6
+2022-05-03 11:47:29,361 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 234496 nps 466194
+2022-05-03 11:47:29,609 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 6 seldepth 15 score cp 321 time 750 nodes 355969 nps 474625 pv g7e5 f2f4 e5f6 g2d5 e7e6 d5c4
+2022-05-03 11:47:29,869 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 468992 nps 464348
+2022-05-03 11:47:30,371 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 712704 nps 471677
+2022-05-03 11:47:30,869 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 952320 nps 473555
+2022-05-03 11:47:31,377 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 1201152 nps 476836
+2022-05-03 11:47:31,880 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 1454080 nps 481164
+2022-05-03 11:47:32,189 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info depth 7 seldepth 16 score cp 320 time 3330 nodes 1605320 nps 482078 pv g7e5 f2f4 e5f6 b1c3 f6c3 b2c3 d7d5 c1e3
+2022-05-03 11:47:32,199 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info currmove g7e5 currmovenumber 1
+2022-05-03 11:47:32,387 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 1695744 nps 480516
+2022-05-03 11:47:32,887 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 1938432 nps 481119
+2022-05-03 11:47:33,389 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 2168832 nps 478665
+2022-05-03 11:47:33,889 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 2407424 nps 478517
+2022-05-03 11:47:34,389 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 2646016 nps 478397
+2022-05-03 11:47:34,889 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 2890752 nps 479315
+2022-05-03 11:47:35,395 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 3141632 nps 480592
+2022-05-03 11:47:35,896 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 3335168 nps 473880
+2022-05-03 11:47:36,398 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 3566592 nps 473022
+2022-05-03 11:47:36,904 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 3816448 nps 474328
+2022-05-03 11:47:37,409 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 4066304 nps 475535
+2022-05-03 11:47:37,911 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 4305920 nps 475634
+2022-05-03 11:47:38,418 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 4559872 nps 476974
+2022-05-03 11:47:38,919 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 4804608 nps 477547
+2022-05-03 11:47:39,419 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 5047296 nps 477918
+2022-05-03 11:47:39,919 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 5286912 nps 477977
+2022-05-03 11:47:40,419 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 5541888 nps 479360
+2022-05-03 11:47:40,919 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 5789696 nps 480034
+2022-05-03 11:47:40,989 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info currmove c6e5 currmovenumber 2
+2022-05-03 11:47:41,421 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 6003712 nps 477888
+2022-05-03 11:47:41,920 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info currmove d7d5 currmovenumber 3
+2022-05-03 11:47:41,929 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 6195200 nps 474037
+2022-05-03 11:47:42,311 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info currmove f7f6 currmovenumber 4
+2022-05-03 11:47:42,396 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info currmove f7f5 currmovenumber 5
+2022-05-03 11:47:42,429 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 6441984 nps 474687
+2022-05-03 11:47:42,575 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> info nodes 6520832 time 13716
+2022-05-03 11:47:42,575 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10860)>: >> bestmove g7e5
+2022-05-03 11:47:42,736 :: run :: line: 603 :: INFO :: bestmove g7e5
+2022-05-03 11:47:42,887 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove g7e5
+2022-05-03 11:47:42,887 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 11:47:42,887 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10860)>: << quit
+2022-05-03 11:47:42,895 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=10860)>: Process exited
+2022-05-03 11:47:42,895 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=10860)>: Connection lost (exit code: 0, error: None)
+2022-05-03 11:48:05,134 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 11:48:05,150 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=9900)>: Connection made
+2022-05-03 11:48:05,151 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << uci
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> id name CDrill 1800
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> id author Ferdinand Mosca
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name Ponder type check default false
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name OwnBook type check default false
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,196 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,204 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 11:48:05,204 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 11:48:05,204 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> uciok
+2022-05-03 11:48:05,205 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << ucinewgame
+2022-05-03 11:48:05,205 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << isready
+2022-05-03 11:48:05,205 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> readyok
+2022-05-03 11:48:05,205 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << position startpos moves g2g3 g7g6 f1g2 f8g7 g1f3 c7c5 d2d3 b8c6 f3e5 g7e5 g2c6
+2022-05-03 11:48:05,205 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << go wtime 177100 btime 177100 winc 2000 binc 2000
+2022-05-03 11:48:05,209 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 1 seldepth 8 score cp 372 time 4 nodes 56 nps 14000 pv d7c6
+2022-05-03 11:48:05,209 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 2 seldepth 10 score cp 357 time 4 nodes 368 nps 92000 pv d7c6 e1f1
+2022-05-03 11:48:05,209 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 3 seldepth 10 score cp 394 time 4 nodes 2310 nps 577500 pv d7c6 c1f4 d8d5
+2022-05-03 11:48:05,231 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 4 seldepth 10 score cp 374 time 26 nodes 10880 nps 418461 pv d7c6 c2c3 d8d5 e2e4
+2022-05-03 11:48:05,332 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 5 seldepth 12 score cp 396 time 127 nodes 56295 nps 443267 pv d7c6 c2c3 c8e6 d3d4 c5d4
+2022-05-03 11:48:05,709 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 232448 nps 460293
+2022-05-03 11:48:06,209 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 476160 nps 473791
+2022-05-03 11:48:06,390 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 6 seldepth 14 score cp 366 time 1185 nodes 564743 nps 476576 pv d7c6 f2f4 e5c7 c2c3 d8d5 e2e4
+2022-05-03 11:48:06,716 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 729088 nps 482201
+2022-05-03 11:48:07,216 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 973824 nps 484007
+2022-05-03 11:48:07,717 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 1215488 nps 483680
+2022-05-03 11:48:08,219 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 1467392 nps 486697
+2022-05-03 11:48:08,723 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 1716224 nps 487702
+2022-05-03 11:48:09,228 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 1964032 nps 488079
+2022-05-03 11:48:09,734 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 2209792 nps 487812
+2022-05-03 11:48:09,958 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info depth 7 seldepth 15 score cp 380 time 4753 nodes 2325906 nps 489355 pv d7c6 h2h3 b7b6 b1c3 c8a6 f2f4 e5c3 b2c3
+2022-05-03 11:48:09,958 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove d7c6 currmovenumber 1
+2022-05-03 11:48:10,238 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 2464768 nps 489624
+2022-05-03 11:48:10,740 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 2711552 nps 489803
+2022-05-03 11:48:11,247 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 2965504 nps 490733
+2022-05-03 11:48:11,749 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 3224576 nps 492677
+2022-05-03 11:48:12,253 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 3485696 nps 494495
+2022-05-03 11:48:12,758 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 3746816 nps 496004
+2022-05-03 11:48:13,266 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 4000768 nps 496311
+2022-05-03 11:48:13,769 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 4259840 nps 497354
+2022-05-03 11:48:14,269 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 4516864 nps 498275
+2022-05-03 11:48:14,361 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove b7c6 currmovenumber 2
+2022-05-03 11:48:14,565 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove e5b2 currmovenumber 3
+2022-05-03 11:48:14,707 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove e5g3 currmovenumber 4
+2022-05-03 11:48:14,771 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 4784128 nps 500065
+2022-05-03 11:48:14,832 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove a7a6 currmovenumber 7
+2022-05-03 11:48:15,067 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove a7a5 currmovenumber 8
+2022-05-03 11:48:15,276 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 5036032 nps 500003
+2022-05-03 11:48:15,369 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove f7f6 currmovenumber 9
+2022-05-03 11:48:15,539 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove f7f5 currmovenumber 10
+2022-05-03 11:48:15,771 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove h7h6 currmovenumber 11
+2022-05-03 11:48:15,779 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 5289984 nps 500234
+2022-05-03 11:48:15,979 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove b7b6 currmovenumber 12
+2022-05-03 11:48:16,101 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info currmove b7b5 currmovenumber 13
+2022-05-03 11:48:16,279 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 5557248 nps 501783
+2022-05-03 11:48:16,355 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> info nodes 5595136 time 11150
+2022-05-03 11:48:16,355 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=9900)>: >> bestmove d7c6
+2022-05-03 11:48:16,497 :: run :: line: 603 :: INFO :: bestmove d7c6
+2022-05-03 11:48:16,679 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove d7c6
+2022-05-03 11:48:16,726 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 11:48:16,730 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=9900)>: << quit
+2022-05-03 11:48:16,730 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=9900)>: Process exited
+2022-05-03 11:48:16,730 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=9900)>: Connection lost (exit code: 0, error: None)
+2022-05-03 11:49:34,974 :: play_game :: line: 2342 :: INFO :: Saving game automatically
+2022-05-03 11:49:38,804 :: play_game :: line: 2145 :: INFO :: Book move is d2d4.
+2022-05-03 11:49:40,681 :: play_game :: line: 2145 :: INFO :: Book move is g8f6.
+2022-05-03 11:50:08,630 :: play_game :: line: 1941 :: INFO :: User wins by adjudication
+2022-05-03 11:50:08,630 :: play_game :: line: 2342 :: INFO :: Saving game automatically
+2022-05-03 11:50:12,906 :: main_loop :: line: 3407 :: INFO :: Book setting is exited.
+2022-05-03 12:02:52,222 :: main_loop :: line: 3518 :: WARNING :: Install engine first!
+2022-05-03 12:03:17,401 :: play_game :: line: 2342 :: INFO :: Saving game automatically
+2022-05-03 12:03:30,851 :: play_game :: line: 2342 :: INFO :: Saving game automatically
+2022-05-03 12:03:38,272 :: play_game :: line: 2145 :: INFO :: Book move is d7d5.
+2022-05-03 12:03:41,610 :: play_game :: line: 2145 :: INFO :: Book move is c7c6.
+2022-05-03 12:03:43,760 :: get_book_move :: line: 295 :: WARNING :: No more book move.
+2022-05-03 12:03:43,761 :: play_game :: line: 2145 :: INFO :: Book move is None.
+2022-05-03 12:03:43,761 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:03:43,772 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=3552)>: Connection made
+2022-05-03 12:03:43,772 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << uci
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> id name CDrill 1800
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> id author Ferdinand Mosca
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name Ponder type check default false
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name OwnBook type check default false
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:03:43,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> uciok
+2022-05-03 12:03:43,981 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << ucinewgame
+2022-05-03 12:03:43,982 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << isready
+2022-05-03 12:03:43,982 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> readyok
+2022-05-03 12:03:43,982 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3
+2022-05-03 12:03:43,982 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << go wtime 184000 btime 184000 winc 2000 binc 2000
+2022-05-03 12:03:43,982 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 1 seldepth 1 score cp 62 time 0 nodes 29 nps 0 pv d8b6
+2022-05-03 12:03:43,982 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 2 seldepth 7 score cp 27 time 0 nodes 435 nps 0 pv c8g4 f3e5
+2022-05-03 12:03:43,982 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 3 seldepth 9 score cp 42 time 0 nodes 1870 nps 0 pv d8b6 d2d4 b6a6
+2022-05-03 12:03:44,011 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 4 seldepth 11 score cp 32 time 28 nodes 13094 nps 467642 pv d8c7 d2d4 c7a5 b1c3 a5a6
+2022-05-03 12:03:44,206 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 5 seldepth 13 score cp 38 time 224 nodes 107395 nps 479441 pv d8a5 f3e5 g8f6 b1c3 a5a6
+2022-05-03 12:03:44,485 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 229376 nps 455111
+2022-05-03 12:03:44,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 468992 nps 464808
+2022-05-03 12:03:45,360 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 6 seldepth 15 score cp 46 time 1378 nodes 650680 nps 472191 pv e7e5 d2d3 c8g4 c1g5 d8a5 b1c3 a5b6
+2022-05-03 12:03:45,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 714752 nps 473345
+2022-05-03 12:03:45,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 964608 nps 479904
+2022-05-03 12:03:46,493 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 1192960 nps 474904
+2022-05-03 12:03:47,002 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 1440768 nps 476917
+2022-05-03 12:03:47,511 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 1696768 nps 480670
+2022-05-03 12:03:48,011 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 1940480 nps 481508
+2022-05-03 12:03:48,512 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 2193408 nps 484089
+2022-05-03 12:03:48,921 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info depth 7 seldepth 16 score cp 52 time 4939 nodes 2398151 nps 485553 pv e7e5 d2d3 c8g4 f3e5 d8h4 g2f3 g8f6
+2022-05-03 12:03:48,921 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info currmove e7e5 currmovenumber 1
+2022-05-03 12:03:49,022 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 2447360 nps 485490
+2022-05-03 12:03:49,532 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 2705408 nps 487373
+2022-05-03 12:03:50,040 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 2958336 nps 488254
+2022-05-03 12:03:50,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 3203072 nps 488273
+2022-05-03 12:03:51,041 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 3452928 nps 489083
+2022-05-03 12:03:51,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 3699712 nps 489379
+2022-05-03 12:03:52,042 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 3949568 nps 490020
+2022-05-03 12:03:52,381 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info currmove c8g4 currmovenumber 2
+2022-05-03 12:03:52,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 4206592 nps 491424
+2022-05-03 12:03:53,042 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 4463616 nps 492672
+2022-05-03 12:03:53,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 4714496 nps 493148
+2022-05-03 12:03:54,041 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 4959232 nps 492965
+2022-05-03 12:03:54,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 5199872 nps 492412
+2022-05-03 12:03:55,041 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 5441536 nps 492001
+2022-05-03 12:03:55,541 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 5698560 nps 492955
+2022-05-03 12:03:56,041 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 5949440 nps 493320
+2022-05-03 12:03:56,542 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 6192128 nps 492964
+2022-05-03 12:03:57,051 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 6451200 nps 493588
+2022-05-03 12:03:57,551 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 6695936 nps 493436
+2022-05-03 12:03:58,052 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 6927360 nps 492349
+2022-05-03 12:03:58,551 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 7170048 nps 492110
+2022-05-03 12:03:59,052 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 7291904 nps 483836
+2022-05-03 12:03:59,554 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 7458816 nps 478958
+2022-05-03 12:04:00,061 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 7638016 nps 475030
+2022-05-03 12:04:00,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info currmove d8a5 currmovenumber 3
+2022-05-03 12:04:00,562 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 7858176 nps 473926
+2022-05-03 12:04:01,072 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 8080384 nps 472813
+2022-05-03 12:04:01,572 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 8253440 nps 469185
+2022-05-03 12:04:01,672 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info currmove b7b5 currmovenumber 4
+2022-05-03 12:04:02,073 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 8489984 nps 469267
+2022-05-03 12:04:02,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> info nodes 8615936 time 18368
+2022-05-03 12:04:02,352 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=3552)>: >> bestmove c8g4
+2022-05-03 12:04:02,457 :: run :: line: 603 :: INFO :: bestmove e7e5
+2022-05-03 12:04:02,636 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove e7e5
+2022-05-03 12:04:02,636 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:04:02,636 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=3552)>: << quit
+2022-05-03 12:04:02,641 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=3552)>: Process exited
+2022-05-03 12:04:02,641 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=3552)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:04:11,251 :: get_book_move :: line: 295 :: WARNING :: No more book move.
+2022-05-03 12:04:11,251 :: play_game :: line: 2145 :: INFO :: Book move is None.
+2022-05-03 12:04:11,251 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:04:11,260 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=10404)>: Connection made
+2022-05-03 12:04:11,268 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << uci
+2022-05-03 12:04:11,310 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:04:11,318 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> id name CDrill 1800
+2022-05-03 12:04:11,318 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> id author Ferdinand Mosca
+2022-05-03 12:04:11,318 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name Ponder type check default false
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name OwnBook type check default false
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:04:11,319 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> uciok
+2022-05-03 12:04:11,323 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << ucinewgame
+2022-05-03 12:04:11,323 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << isready
+2022-05-03 12:04:11,323 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> readyok
+2022-05-03 12:04:11,323 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1
+2022-05-03 12:04:11,323 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << go wtime 168900 btime 168900 winc 2000 binc 2000
+2022-05-03 12:04:11,326 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 1 seldepth 7 score cp 46 time 0 nodes 87 nps 0 pv d8f6
+2022-05-03 12:04:11,326 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 2 seldepth 6 score cp 57 time 3 nodes 339 nps 113000 pv d8f6 h2h3
+2022-05-03 12:04:11,326 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 3 seldepth 10 score cp 87 time 3 nodes 1304 nps 434666 pv d8f6 g1h1 f6f4
+2022-05-03 12:04:11,331 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 3 seldepth 9 score cp 150 time 8 nodes 3009 nps 376125 pv e5e4 f3e5 d8h4
+2022-05-03 12:04:11,350 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 4 seldepth 10 score cp 131 time 19 nodes 11977 nps 630368 pv e5e4 f3d4 d8h4 h2h3
+2022-05-03 12:04:11,467 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 5 seldepth 12 score cp 191 time 144 nodes 68141 nps 473201 pv e5e4 f3d4 d8h4 d4f5 h4g4
+2022-05-03 12:04:11,828 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 250880 nps 495810
+2022-05-03 12:04:12,330 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 502784 nps 498793
+2022-05-03 12:04:12,330 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 6 seldepth 15 score cp 149 time 1007 nodes 504519 nps 501011 pv e5e4 f3d4 d8h4 h2h3 f8d6 f2f4
+2022-05-03 12:04:12,831 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 766976 nps 508604
+2022-05-03 12:04:13,332 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 1021952 nps 508433
+2022-05-03 12:04:13,835 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 1275904 nps 507721
+2022-05-03 12:04:14,340 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 1534976 nps 508775
+2022-05-03 12:04:14,841 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 1793024 nps 509526
+2022-05-03 12:04:15,341 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 2050048 nps 510089
+2022-05-03 12:04:15,842 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 2307072 nps 510414
+2022-05-03 12:04:16,125 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info depth 7 seldepth 18 score cp 222 time 4802 nodes 2452960 nps 510820 pv e5e4 f3d4 d8h4 h2h3 f8c5 e2e3 c5d6
+2022-05-03 12:04:16,125 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove e5e4 currmovenumber 1
+2022-05-03 12:04:16,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 2567168 nps 510472
+2022-05-03 12:04:16,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 2837504 nps 513203
+2022-05-03 12:04:17,181 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove c8g4 currmovenumber 2
+2022-05-03 12:04:17,352 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 3113984 nps 516500
+2022-05-03 12:04:17,501 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove d8f6 currmovenumber 3
+2022-05-03 12:04:17,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 3382272 nps 518038
+2022-05-03 12:04:17,891 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove h7h5 currmovenumber 4
+2022-05-03 12:04:18,352 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 3643392 nps 518337
+2022-05-03 12:04:18,521 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove a7a6 currmovenumber 5
+2022-05-03 12:04:18,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 3911680 nps 519548
+2022-05-03 12:04:18,901 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove a7a5 currmovenumber 6
+2022-05-03 12:04:19,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 4173824 nps 519843
+2022-05-03 12:04:19,352 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove d5d4 currmovenumber 7
+2022-05-03 12:04:19,691 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove c6c5 currmovenumber 8
+2022-05-03 12:04:19,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 4447232 nps 521424
+2022-05-03 12:04:20,081 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove b7b6 currmovenumber 9
+2022-05-03 12:04:20,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 4716544 nps 522377
+2022-05-03 12:04:20,412 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove b7b5 currmovenumber 10
+2022-05-03 12:04:20,852 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 4985856 nps 523229
+2022-05-03 12:04:20,875 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove g7g6 currmovenumber 11
+2022-05-03 12:04:21,261 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove g7g5 currmovenumber 12
+2022-05-03 12:04:21,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 5256192 nps 524099
+2022-05-03 12:04:21,511 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f7f6 currmovenumber 13
+2022-05-03 12:04:21,782 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove g8e7 currmovenumber 14
+2022-05-03 12:04:21,852 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 5527552 nps 524983
+2022-05-03 12:04:21,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove g8f6 currmovenumber 15
+2022-05-03 12:04:22,330 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove g8h6 currmovenumber 16
+2022-05-03 12:04:22,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 5791744 nps 525137
+2022-05-03 12:04:22,661 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove b8d7 currmovenumber 17
+2022-05-03 12:04:22,852 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 6060032 nps 525633
+2022-05-03 12:04:22,932 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove b8a6 currmovenumber 18
+2022-05-03 12:04:23,351 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 6321152 nps 525492
+2022-05-03 12:04:23,482 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f8e7 currmovenumber 19
+2022-05-03 12:04:23,782 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f8d6 currmovenumber 20
+2022-05-03 12:04:23,852 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 6597632 nps 526546
+2022-05-03 12:04:24,161 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f8c5 currmovenumber 21
+2022-05-03 12:04:24,355 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 6873088 nps 527360
+2022-05-03 12:04:24,837 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f8b4 currmovenumber 22
+2022-05-03 12:04:24,861 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 7150592 nps 528147
+2022-05-03 12:04:25,231 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove c8d7 currmovenumber 23
+2022-05-03 12:04:25,362 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 7424000 nps 528774
+2022-05-03 12:04:25,495 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove c8e6 currmovenumber 24
+2022-05-03 12:04:25,835 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info currmove f7f5 currmovenumber 25
+2022-05-03 12:04:25,865 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 7700480 nps 529497
+2022-05-03 12:04:25,880 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> info nodes 7708672 time 14557
+2022-05-03 12:04:25,881 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10404)>: >> bestmove e5e4
+2022-05-03 12:04:26,161 :: run :: line: 603 :: INFO :: bestmove e5e4
+2022-05-03 12:04:26,396 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove e5e4
+2022-05-03 12:04:26,396 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:04:26,396 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10404)>: << quit
+2022-05-03 12:04:26,402 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=10404)>: Process exited
+2022-05-03 12:04:26,402 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=10404)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:04:31,372 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:04:31,381 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=1904)>: Connection made
+2022-05-03 12:04:31,381 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << uci
+2022-05-03 12:04:31,461 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:04:31,470 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> id name CDrill 1800
+2022-05-03 12:04:31,470 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> id author Ferdinand Mosca
+2022-05-03 12:04:31,470 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name Ponder type check default false
+2022-05-03 12:04:31,471 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name OwnBook type check default false
+2022-05-03 12:04:31,471 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:04:31,471 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,471 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,471 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> uciok
+2022-05-03 12:04:31,472 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << ucinewgame
+2022-05-03 12:04:31,472 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << isready
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> readyok
+2022-05-03 12:04:31,472 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1 e5e4 f3e5
+2022-05-03 12:04:31,472 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << go wtime 157400 btime 157400 winc 2000 binc 2000
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 1 seldepth 5 score cp 150 time 0 nodes 87 nps 0 pv d8h4
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 2 seldepth 7 score cp 180 time 0 nodes 358 nps 0 pv d8h4 h2h3
+2022-05-03 12:04:31,472 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 2 seldepth 9 score cp 280 time 0 nodes 964 nps 0 pv f7f6 g2e4
+2022-05-03 12:04:31,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 3 seldepth 9 score cp 280 time 9 nodes 2506 nps 278444 pv f7f6 g2e4 f6e5
+2022-05-03 12:04:31,501 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 4 seldepth 13 score cp 294 time 28 nodes 11144 nps 398000 pv f7f6 f2f4 f6e5 f4e5
+2022-05-03 12:04:31,630 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 5 seldepth 12 score cp 329 time 158 nodes 75780 nps 479620 pv f7f6 d2d4 f6e5 g4g5 f8d6
+2022-05-03 12:04:31,980 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 251904 nps 494899
+2022-05-03 12:04:32,431 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 6 seldepth 15 score cp 327 time 959 nodes 472715 nps 492924 pv d8h4 f2f4 f7f6 d1e1 f8c5 d2d4 e4d3 g1h1
+2022-05-03 12:04:32,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 496640 nps 491722
+2022-05-03 12:04:32,981 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 754688 nps 499793
+2022-05-03 12:04:33,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 1012736 nps 503848
+2022-05-03 12:04:33,981 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 1262592 nps 503024
+2022-05-03 12:04:34,482 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 1512448 nps 502307
+2022-05-03 12:04:34,986 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 1769472 nps 503549
+2022-05-03 12:04:35,486 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 2025472 nps 504476
+2022-05-03 12:04:35,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 2275328 nps 503391
+2022-05-03 12:04:36,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 2530304 nps 504044
+2022-05-03 12:04:36,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 2782208 nps 504023
+2022-05-03 12:04:37,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 3035136 nps 504175
+2022-05-03 12:04:37,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 3288064 nps 504304
+2022-05-03 12:04:37,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info depth 7 seldepth 16 score cp 331 time 6520 nodes 3288076 nps 504306 pv f7f6 e5f3 e4f3 e2f3 c8e6 d1e2 d8d6
+2022-05-03 12:04:37,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info currmove f7f6 currmovenumber 1
+2022-05-03 12:04:38,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 3545088 nps 504998
+2022-05-03 12:04:38,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 3804160 nps 505872
+2022-05-03 12:04:39,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 4058112 nps 505999
+2022-05-03 12:04:39,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 4323328 nps 507432
+2022-05-03 12:04:40,291 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info currmove d8h4 currmovenumber 2
+2022-05-03 12:04:40,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 4592640 nps 509161
+2022-05-03 12:04:40,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 4851712 nps 509580
+2022-05-03 12:04:41,502 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 5118976 nps 510366
+2022-05-03 12:04:42,001 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 5377024 nps 510638
+2022-05-03 12:04:42,501 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 5622784 nps 509771
+2022-05-03 12:04:43,001 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 5883904 nps 510312
+2022-05-03 12:04:43,501 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 6130688 nps 509616
+2022-05-03 12:04:44,002 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 6391808 nps 510079
+2022-05-03 12:04:44,510 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 6658048 nps 510625
+2022-05-03 12:04:45,011 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 6920192 nps 511130
+2022-05-03 12:04:45,511 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 7177216 nps 511197
+2022-05-03 12:04:46,011 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 7425024 nps 510661
+2022-05-03 12:04:46,512 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 7672832 nps 510127
+2022-05-03 12:04:47,015 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 7931904 nps 510287
+2022-05-03 12:04:47,092 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> info nodes 7969792 time 15619
+2022-05-03 12:04:47,092 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=1904)>: >> bestmove f7f6
+2022-05-03 12:04:47,231 :: run :: line: 603 :: INFO :: bestmove f7f6
+2022-05-03 12:04:47,371 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove f7f6
+2022-05-03 12:04:47,371 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:04:47,372 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=1904)>: << quit
+2022-05-03 12:04:47,372 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=1904)>: Process exited
+2022-05-03 12:04:47,372 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=1904)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:04:53,302 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:04:53,331 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=11740)>: Connection made
+2022-05-03 12:04:53,331 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << uci
+2022-05-03 12:04:53,381 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:04:53,391 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> id name CDrill 1800
+2022-05-03 12:04:53,391 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> id author Ferdinand Mosca
+2022-05-03 12:04:53,391 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name Ponder type check default false
+2022-05-03 12:04:53,391 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name OwnBook type check default false
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> uciok
+2022-05-03 12:04:53,392 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << ucinewgame
+2022-05-03 12:04:53,392 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << isready
+2022-05-03 12:04:53,392 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> readyok
+2022-05-03 12:04:53,396 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1 e5e4 f3e5 f7f6 d2d3
+2022-05-03 12:04:53,396 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << go wtime 145000 btime 145000 winc 2000 binc 2000
+2022-05-03 12:04:53,396 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 1 seldepth 7 score cp 314 time 0 nodes 41 nps 0 pv f6e5
+2022-05-03 12:04:53,396 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 2 seldepth 9 score cp 314 time 0 nodes 388 nps 0 pv f6e5 d3e4
+2022-05-03 12:04:53,401 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 3 seldepth 9 score cp 357 time 5 nodes 2133 nps 426600 pv f6e5 g4g5 d8b6
+2022-05-03 12:04:53,412 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 4 seldepth 10 score cp 340 time 16 nodes 8283 nps 517687 pv f6e5 g4g5 d8b6 g1h1
+2022-05-03 12:04:53,552 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 5 seldepth 12 score cp 374 time 156 nodes 69331 nps 444429 pv f6e5 g4g5 d8d7 f2f4 f8c5 e2e3
+2022-05-03 12:04:53,901 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 230400 nps 456237
+2022-05-03 12:04:54,120 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 6 seldepth 14 score cp 366 time 719 nodes 331957 nps 461692 pv f6e5 d1d2 e4d3 g4g5 d8b6 e2e3
+2022-05-03 12:04:54,401 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 458752 nps 456015
+2022-05-03 12:04:54,901 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 704512 nps 467803
+2022-05-03 12:04:55,401 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 965632 nps 481371
+2022-05-03 12:04:55,901 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 1223680 nps 488300
+2022-05-03 12:04:56,402 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 1476608 nps 491056
+2022-05-03 12:04:56,907 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 1744896 nps 497121
+2022-05-03 12:04:57,371 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info depth 7 seldepth 16 score cp 388 time 3975 nodes 1927439 nps 484890 pv f6e5 g4g5 d8d7 h2h3 e4d3 g1h1 d3c2
+2022-05-03 12:04:57,373 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove f6e5 currmovenumber 1
+2022-05-03 12:04:57,405 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 1944576 nps 484931
+2022-05-03 12:04:57,851 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove e4d3 currmovenumber 2
+2022-05-03 12:04:57,910 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 2223104 nps 492381
+2022-05-03 12:04:58,071 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove c8g4 currmovenumber 3
+2022-05-03 12:04:58,360 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove b7b5 currmovenumber 4
+2022-05-03 12:04:58,410 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 2506752 nps 499850
+2022-05-03 12:04:58,646 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove d5d4 currmovenumber 5
+2022-05-03 12:04:58,910 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 2785280 nps 505037
+2022-05-03 12:04:58,941 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove c6c5 currmovenumber 6
+2022-05-03 12:04:59,151 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove g7g6 currmovenumber 7
+2022-05-03 12:04:59,411 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 3052544 nps 507488
+2022-05-03 12:04:59,492 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove g7g5 currmovenumber 8
+2022-05-03 12:04:59,801 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove a7a6 currmovenumber 9
+2022-05-03 12:04:59,911 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 3321856 nps 509878
+2022-05-03 12:05:00,122 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove a7a5 currmovenumber 10
+2022-05-03 12:05:00,411 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 3586048 nps 511197
+2022-05-03 12:05:00,465 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove h7h5 currmovenumber 11
+2022-05-03 12:05:00,910 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 3854336 nps 512885
+2022-05-03 12:05:01,013 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove e4e3 currmovenumber 12
+2022-05-03 12:05:01,302 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info currmove h7h6 currmovenumber 13
+2022-05-03 12:05:01,331 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> info nodes 4074496 time 7935
+2022-05-03 12:05:01,331 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11740)>: >> bestmove f6e5
+2022-05-03 12:05:01,504 :: run :: line: 603 :: INFO :: bestmove f6e5
+2022-05-03 12:05:01,691 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove f6e5
+2022-05-03 12:05:01,691 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:05:01,691 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11740)>: << quit
+2022-05-03 12:05:01,691 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=11740)>: Process exited
+2022-05-03 12:05:01,691 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=11740)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:05:05,296 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:05:05,400 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=10420)>: Connection made
+2022-05-03 12:05:05,401 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << uci
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> id name CDrill 1800
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> id author Ferdinand Mosca
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name Ponder type check default false
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name OwnBook type check default false
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> uciok
+2022-05-03 12:05:05,451 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << ucinewgame
+2022-05-03 12:05:05,451 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << isready
+2022-05-03 12:05:05,451 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> readyok
+2022-05-03 12:05:05,460 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1 e5e4 f3e5 f7f6 d2d3 f6e5 d3e4
+2022-05-03 12:05:05,460 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << go wtime 139500 btime 139500 winc 2000 binc 2000
+2022-05-03 12:05:05,462 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 1 seldepth 7 score cp 431 time 1 nodes 89 nps 89000 pv d8h4
+2022-05-03 12:05:05,462 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 2 seldepth 7 score cp 406 time 1 nodes 301 nps 301000 pv d8h4 h2h3
+2022-05-03 12:05:05,462 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 3 seldepth 10 score cp 431 time 1 nodes 2090 nps 2090000 pv d8h4 e4d5 c8g4
+2022-05-03 12:05:05,482 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 4 seldepth 11 score cp 411 time 21 nodes 11453 nps 545380 pv d8h4 h2h3 f8c5 c1e3
+2022-05-03 12:05:05,606 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 5 seldepth 13 score cp 410 time 145 nodes 74607 nps 514531 pv d8h4 h2h3 d5d4 c1d2 c8e6
+2022-05-03 12:05:05,961 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 262144 nps 523241
+2022-05-03 12:05:06,252 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 6 seldepth 17 score cp 393 time 791 nodes 407471 nps 515134 pv d8h4 e4d5 c8g4 d5c6 b8c6 g1h1
+2022-05-03 12:05:06,462 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 514048 nps 513534
+2022-05-03 12:05:06,961 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 775168 nps 516434
+2022-05-03 12:05:07,462 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 1022976 nps 510977
+2022-05-03 12:05:07,972 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 1263616 nps 503031
+2022-05-03 12:05:08,475 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 1523712 nps 505377
+2022-05-03 12:05:08,981 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 1793024 nps 509237
+2022-05-03 12:05:09,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 2067456 nps 514164
+2022-05-03 12:05:09,981 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 2340864 nps 517775
+2022-05-03 12:05:10,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 2613248 nps 520463
+2022-05-03 12:05:10,971 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info depth 7 seldepth 20 score cp 379 time 5510 nodes 2867018 nps 520329 pv c8g4 d1d2 h7h6 d2c3 b8d7 f2f3 f8c5 c1e3
+2022-05-03 12:05:10,980 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info currmove c8g4 currmovenumber 1
+2022-05-03 12:05:10,981 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 2868224 nps 519511
+2022-05-03 12:05:11,481 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 3123200 nps 518717
+2022-05-03 12:05:11,982 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 3401728 nps 521577
+2022-05-03 12:05:12,485 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 3657728 nps 520673
+2022-05-03 12:05:12,985 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 3931136 nps 522410
+2022-05-03 12:05:13,485 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 4217856 nps 525589
+2022-05-03 12:05:13,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 4508672 nps 528504
+2022-05-03 12:05:14,491 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 4769792 nps 528157
+2022-05-03 12:05:14,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 5046272 nps 529458
+2022-05-03 12:05:15,492 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 5315584 nps 529915
+2022-05-03 12:05:15,601 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info currmove d5e4 currmovenumber 2
+2022-05-03 12:05:15,661 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info currmove d8h4 currmovenumber 3
+2022-05-03 12:05:15,991 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 5594112 nps 531204
+2022-05-03 12:05:16,485 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> info nodes 5846016 time 11024
+2022-05-03 12:05:16,485 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=10420)>: >> bestmove c8g4
+2022-05-03 12:05:16,601 :: run :: line: 603 :: INFO :: bestmove c8g4
+2022-05-03 12:05:16,777 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove c8g4
+2022-05-03 12:05:16,777 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:05:16,777 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=10420)>: << quit
+2022-05-03 12:05:16,781 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=10420)>: Process exited
+2022-05-03 12:05:16,781 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=10420)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:05:22,451 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:05:22,462 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=11956)>: Connection made
+2022-05-03 12:05:22,466 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << uci
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> id name CDrill 1800
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> id author Ferdinand Mosca
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name Ponder type check default false
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name OwnBook type check default false
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:05:22,602 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> uciok
+2022-05-03 12:05:22,611 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << ucinewgame
+2022-05-03 12:05:22,611 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << isready
+2022-05-03 12:05:22,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> readyok
+2022-05-03 12:05:22,611 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1 e5e4 f3e5 f7f6 d2d3 f6e5 d3e4 c8g4 h2h3
+2022-05-03 12:05:22,611 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << go wtime 131100 btime 131100 winc 2000 binc 2000
+2022-05-03 12:05:22,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 1 seldepth 7 score cp 343 time 0 nodes 159 nps 0 pv g4e6
+2022-05-03 12:05:22,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 2 seldepth 7 score cp 341 time 0 nodes 352 nps 0 pv g4e6 c1e3
+2022-05-03 12:05:22,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 3 seldepth 10 score cp 371 time 0 nodes 2034 nps 0 pv g4e6 e4d5 c6d5
+2022-05-03 12:05:22,622 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 3 seldepth 9 score cp 389 time 10 nodes 3885 nps 388500 pv g4d7 e4d5 d8h4
+2022-05-03 12:05:22,631 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 4 seldepth 9 score cp 389 time 20 nodes 10554 nps 527700 pv g4d7 e4d5 d8h4 d5c6
+2022-05-03 12:05:22,751 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 5 seldepth 13 score cp 389 time 139 nodes 74449 nps 535604 pv g4d7 e4d5 d8h4 d5c6 b8c6
+2022-05-03 12:05:23,112 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 281600 nps 562075
+2022-05-03 12:05:23,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 538624 nps 538085
+2022-05-03 12:05:23,876 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 6 seldepth 16 score cp 352 time 1265 nodes 689843 nps 545330 pv g4e6 d1d2 d8f6 d2g5 h7h6 g5f6
+2022-05-03 12:05:24,111 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 811008 nps 540311
+2022-05-03 12:05:24,611 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 1053696 nps 526584
+2022-05-03 12:05:25,111 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 1308672 nps 523259
+2022-05-03 12:05:25,612 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 1507328 nps 502107
+2022-05-03 12:05:26,272 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 1740800 nps 475498
+2022-05-03 12:05:26,771 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 1822720 nps 438048
+2022-05-03 12:05:27,271 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 2055168 nps 440928
+2022-05-03 12:05:27,772 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 2238464 nps 433642
+2022-05-03 12:05:28,281 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 2484224 nps 438134
+2022-05-03 12:05:28,785 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 2729984 nps 442102
+2022-05-03 12:05:29,060 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info depth 7 seldepth 17 score cp 371 time 6441 nodes 2837790 nps 440582 pv g4e6 e4d5 c6d5 c2c4 d8h4 g2d5 e6h3
+2022-05-03 12:05:29,061 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info currmove g4e6 currmovenumber 1
+2022-05-03 12:05:29,291 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 2951168 nps 441725
+2022-05-03 12:05:29,792 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 3222528 nps 448695
+2022-05-03 12:05:30,301 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 3485696 nps 453217
+2022-05-03 12:05:30,801 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 3719168 nps 454055
+2022-05-03 12:05:31,301 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 3989504 nps 459038
+2022-05-03 12:05:31,801 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 4258816 nps 463368
+2022-05-03 12:05:32,301 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 4490240 nps 463341
+2022-05-03 12:05:32,801 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 4704256 nps 461608
+2022-05-03 12:05:33,112 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info currmove d5e4 currmovenumber 2
+2022-05-03 12:05:33,245 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info currmove g4d7 currmovenumber 3
+2022-05-03 12:05:33,301 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 4920320 nps 460230
+2022-05-03 12:05:33,805 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 5059584 nps 451990
+2022-05-03 12:05:34,311 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 5282816 nps 451522
+2022-05-03 12:05:34,812 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 5462016 nps 447669
+2022-05-03 12:05:35,312 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 5668864 nps 446296
+2022-05-03 12:05:35,688 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> info nodes 5867520 time 13077
+2022-05-03 12:05:35,688 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11956)>: >> bestmove g4e6
+2022-05-03 12:05:35,827 :: run :: line: 603 :: INFO :: bestmove g4e6
+2022-05-03 12:05:35,972 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove g4e6
+2022-05-03 12:05:35,972 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:05:35,972 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11956)>: << quit
+2022-05-03 12:05:35,979 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=11956)>: Process exited
+2022-05-03 12:05:35,979 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=11956)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:06:06,082 :: __init__ :: line: 625 :: DEBUG :: Using proactor: IocpProactor
+2022-05-03 12:06:06,090 :: connection_made :: line: 957 :: DEBUG :: <UciProtocol (pid=11784)>: Connection made
+2022-05-03 12:06:06,090 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << uci
+2022-05-03 12:06:06,137 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info string CDrill 1800 32bit Build 4
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> id name CDrill 1800
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> id author Ferdinand Mosca
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name Ponder type check default false
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name OwnBook type check default false
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name MultiPV type spin default 1 min 1 max 300
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2022-05-03 12:06:06,145 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> uciok
+2022-05-03 12:06:06,151 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << ucinewgame
+2022-05-03 12:06:06,151 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << isready
+2022-05-03 12:06:06,151 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> readyok
+2022-05-03 12:06:06,151 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << position startpos moves g2g4 d7d5 f1g2 c7c6 g1f3 e7e5 e1g1 e5e4 f3e5 f7f6 d2d3 f6e5 d3e4 c8g4 h2h3 g4e6 d1d4
+2022-05-03 12:06:06,151 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << go wtime 121100 btime 121100 winc 2000 binc 2000
+2022-05-03 12:06:06,151 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 1 seldepth 5 score cp 1280 time 0 nodes 45 nps 0 pv e5d4
+2022-05-03 12:06:06,151 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 2 seldepth 9 score cp 1265 time 0 nodes 324 nps 0 pv e5d4 e4e5
+2022-05-03 12:06:06,151 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 3 seldepth 8 score cp 1296 time 0 nodes 2362 nps 0 pv e5d4 e4d5 e6d5
+2022-05-03 12:06:06,172 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 4 seldepth 11 score cp 1272 time 21 nodes 10482 nps 499142 pv e5d4 e4d5 e6d5 e2e4
+2022-05-03 12:06:06,309 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 5 seldepth 12 score cp 1349 time 154 nodes 75990 nps 493441 pv e5d4 f2f4 d8h4 f4f5 e6f7
+2022-05-03 12:06:06,651 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 249856 nps 498714
+2022-05-03 12:06:06,830 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 6 seldepth 13 score cp 1331 time 679 nodes 341560 nps 503033 pv e5d4 b1d2 d5e4 d2e4 d8h4 c1g5
+2022-05-03 12:06:07,158 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 518144 nps 514031
+2022-05-03 12:06:07,661 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 797696 nps 527925
+2022-05-03 12:06:08,162 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 1081344 nps 537714
+2022-05-03 12:06:08,669 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 1369088 nps 543720
+2022-05-03 12:06:09,170 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 1647616 nps 545568
+2022-05-03 12:06:09,528 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info depth 7 seldepth 15 score cp 1363 time 3377 nodes 1849307 nps 547618 pv e5d4 b1d2 d8h4 d2f3 h4e4 g1h1 e4g6
+2022-05-03 12:06:09,528 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove e5d4 currmovenumber 1
+2022-05-03 12:06:09,672 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 1938432 nps 550378
+2022-05-03 12:06:10,176 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 2239488 nps 556256
+2022-05-03 12:06:10,680 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 2523136 nps 556983
+2022-05-03 12:06:10,992 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove d5e4 currmovenumber 2
+2022-05-03 12:06:11,092 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove e6h3 currmovenumber 3
+2022-05-03 12:06:11,187 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 2817024 nps 559266
+2022-05-03 12:06:11,363 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove a7a5 currmovenumber 4
+2022-05-03 12:06:11,585 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove g7g6 currmovenumber 5
+2022-05-03 12:06:11,688 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 3115008 nps 562478
+2022-05-03 12:06:11,812 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove g7g5 currmovenumber 6
+2022-05-03 12:06:12,021 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove c6c5 currmovenumber 7
+2022-05-03 12:06:12,188 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 3408896 nps 564573
+2022-05-03 12:06:12,237 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove h7h6 currmovenumber 8
+2022-05-03 12:06:12,452 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove h7h5 currmovenumber 9
+2022-05-03 12:06:12,688 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 3690496 nps 564468
+2022-05-03 12:06:12,711 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove b7b6 currmovenumber 10
+2022-05-03 12:06:12,901 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove b7b5 currmovenumber 11
+2022-05-03 12:06:13,121 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info currmove g8e7 currmovenumber 12
+2022-05-03 12:06:13,149 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> info nodes 3956736 time 6998
+2022-05-03 12:06:13,149 :: _line_received :: line: 1006 :: DEBUG :: <UciProtocol (pid=11784)>: >> bestmove e5d4
+2022-05-03 12:06:13,350 :: run :: line: 603 :: INFO :: bestmove e5d4
+2022-05-03 12:06:13,569 :: play_game :: line: 2255 :: INFO :: engine msg: bestmove e5d4
+2022-05-03 12:06:13,569 :: quit_engine :: line: 607 :: INFO :: quit engine
+2022-05-03 12:06:13,569 :: send_line :: line: 979 :: DEBUG :: <UciProtocol (pid=11784)>: << quit
+2022-05-03 12:06:13,577 :: process_exited :: line: 976 :: DEBUG :: <UciProtocol (pid=11784)>: Process exited
+2022-05-03 12:06:13,577 :: connection_lost :: line: 963 :: DEBUG :: <UciProtocol (pid=11784)>: Connection lost (exit code: 0, error: None)
+2022-05-03 12:11:35,142 :: play_game :: line: 1887 :: INFO :: Quit app X is pressed.
+2022-05-03 12:11:35,142 :: play_game :: line: 2342 :: INFO :: Saving game automatically
